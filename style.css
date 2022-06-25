@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global 
+---------------*/
+
+html, body {
+	margin: 0 auto;
+	padding: 0px;
+}
+body {
+	background-color: #F2F2F2;
+	color: #2D2D2D;
+	text-decoration: none;
+	font-family: scarlet, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1em;
+}
+#header {
+	display: block;
+	height: 100px;
+}
+nav {
+	display: block;
+	float: left;
+}
+#logo {
+	float: right;
+	overflow-y: visible;
+	display: block;
+}
+li {
+	display: inline-block;
+	padding-right: 15px;
+}
+h1 {
+	font-family: adorn-smooth-condensed-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2em;
+	text-align: center;
+	color: #F2F2F2;
+}
+h2 {
+	font-family: adorn-smooth-condensed-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.6em;
+	text-align: center;
+	color: #045880;
+}
+#nav2 {
+	margin: 0 auto;
+	width: 300px;
+}
+a {
+	text-decoration: none;
+	font-family: scarlet, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #2D2D2D;
+}
+.intro {
+	margin: 0 auto;
+	width: 300px;
+}
+.nav-col-1, .nav-col-2, .nav-col-3, .nav-col-4 {
+	float: none;
+	text-align: center;
+}
+.nav-col-1 {
+	width: 297px;
+	height: 201px;
+	padding-left: 2px;
+	background-image: url("img/img_mobile/logo.png");	
+}
+.nav-col-2 {
+	width: 298px;
+	height: 209px;
+	background-image: url("img/img_mobile/bicycle_tours.png");
+}
+.nav-col-3 {
+	width: 298px;
+	height: 216px;
+	background-image: url("img/img_mobile/bicycle_rentals.png");
+}
+.nav-col-4 {;
+	width: 297px;
+	height: 220px;
+	background-image: url("img/img_mobile/bicycle_recycling.png");
+}
+.nav-col-5 {
+	width: 297px;
+	height: 73px;
+	background-image: url("img/img_mobile/bryggen.png");
+}
+#feature {
+	background-image: url("img/feature_img_tours.jpg");
+	height: 600px;
+	align-content: center;
+}
+#feature2 {
+	background-image: url("img/feature_img_about.png");
+	height: 600px;
+	align-content: center;
+}
+#feature3 {
+	background-image: url("img/feature_img_contact.png");
+	height: 600px;
+	align-content: center;
+}
+#blockquote {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    filter: alpha(opacity=50);
+}
+blockquote {
+    font-size: 40px;
+    position: relative;
+	bottom: -40px;
+    color: #F2F2F2;
+    line-height: 1.54em;
+    padding: 0 70px;
+    text-align: justify;
+	text-shadow: 2px 2px #2d2d2d;
+}
+blockquote::before {
+    font-family: Georgia, serif;
+    content: '„';
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+blockquote::after {
+    font-family: Georgia, serif;
+    content: '”';
+    font-size: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.tour_content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6   {
+	width: 300px;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 40px;
+}
+iframe, .col_img {
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
+.article {
+	max-width: 960px;
+	display: block;
+	margin: 0 auto;
+}
+.article:first-of-type iframe {
+	max-width: 99%;
+}
+p {
+	text-align: center;
+	font-family: scarlet, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+.content-wrap {
+	clear: both;
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.button {
+	font-family: poppins, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5em;
+	background-color: #3F6ABE;
+	color: #ffffff;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 40px;
+}
+footer { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	clear: both;
+	width: 100%;
+	margin: 0px;
+	background-color: #94B566;
+	color: #F2F2F2;
+	font-size: 0.7em;
+}
+.socialmedia {
+	text-align: right;
+	justify-content: flex-end;
+	float: right;
+	width: 40%;
+	padding: 10px 20px;
+}
+.float-left {
+	display: block;
+	width: 40%;
+	float: left;
+	padding: 10px 20px;
+}
+
+/* for tablets */
+@media screen and (min-width:600px) and (max-width:1023px) {
+	.content-wrap {
+		max-width: 100%;	
+	}
+	#feature {
+		height: 600px;
+	}
+	#form {
+		top: 200px;
+		height: 1100px;
+	}
+	.content-wrap {
+		clear: both;
+		display: inline-block;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+/* for phones orientation:portrait */
+
+@media screen and (min-width:300px) and (max-width:599px) and (orientation : portrait) {
+	.content-wrap {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	#feature {
+		background-image: url("img/feature_img_tours_mobile.png");
+		height: 600px;
+	}
+	#feature2 {
+		background-image: url("img/feature_img_about_mobile.png");
+		height: 600px;
+		align-content: center;
+	}
+	#feature3 {
+		background-image: url("img/feature_img_contact_mobile.png");
+		height: 600px;
+		align-content: center;
+	}
+	blockquote {
+    	font-size: 40px;
+    	line-height: 1em;
+	}
+	blockquote::before {
+    	font-family: Georgia, serif;
+    	content: '„';
+    	font-size: 60px;
+	}
+	blockquote::after {
+    	font-family: Georgia, serif;
+    	content: '”';
+    	font-size: 60px;
+	}
+	h1 {
+		font-size: 0.5em;
+	}
+
+	footer {
+		clear: both;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

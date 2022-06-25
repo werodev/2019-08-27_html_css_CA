@@ -47,7 +47,7 @@ If you use different editor, probably you know what to do :bowtie: (it'a simple,
 
 ## I'm proud of
 
-Things we struggle the most with, are the ones we cherish, in this case it was positioning H1 on top of an image. I also really like the logo idea. 
+I was really happy about home page design idea at the time with little cyclists and Bryggen miniature at the bottom to add it an characteristic element of local architecture. It was hard to code it for desktop though... 
 
 ## Preview
 
